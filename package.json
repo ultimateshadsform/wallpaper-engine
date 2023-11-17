@@ -2,7 +2,7 @@
   "name": "wallpaper-engine-types",
   "version": "1.0.3",
   "description": "TypeScript definitions for Wallpaper Engine",
-  "types": "index.d.ts",
+  "types": "dist/index.d.ts",
   "author": "Alexander",
   "repository": {
     "type": "git",
