@@ -14,4 +14,16 @@ This package is available on [npm](https://www.npmjs.com/package/wallpaper-engin
 
 `npm install wallpaper-engine-types`
 
+In your `tsconfig.json` you need to add the line:
+
+```json
+{
+  "compilerOptions": {
+    "types": ["wallpaper-engine-types"]
+  }
+}
+```
+
+For it to show and work.
+
 If anything is not working as expected, please [open an issue](https://github.com/ultimateshadsform/wallpaper-engine/issues/new/choose) on GitHub.
