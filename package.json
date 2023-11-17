@@ -18,5 +18,8 @@
     "typescript",
     "definitions",
     "typings"
-  ]
+  ],
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
 }
