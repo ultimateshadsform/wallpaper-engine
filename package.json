@@ -1,5 +1,13 @@
 {
   "name": "@types/wallpaper-engine",
   "version": "1.0.0",
+  "description": "TypeScript definitions for Wallpaper Engine",
+  "main": "index.d.ts",
+  "types": "index.d.ts",
+  "author": "Alexander",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ultimateshadsform/wallpaper-engine.git"
+  },
   "license": "MIT"
 }
