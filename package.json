@@ -1,6 +1,6 @@
 {
   "name": "wallpaper-engine-types",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "TypeScript definitions for Wallpaper Engine",
   "types": "dist/index.d.ts",
   "author": "Alexander",
