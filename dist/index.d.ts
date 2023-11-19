@@ -6,10 +6,10 @@ declare global {
      * @returns {any}
      */
     wallpaperPropertyListener: {
-      applyUserProperties?<T extends { value: any }>(properties: {
+      applyUserProperties?<T extends { value?: any }>(properties: {
         [key: string]: T;
       }): void;
-      applyGeneralProperties?(properties: { fps: number }): void;
+      applyGeneralProperties?(properties: { fps?: number }): void;
     };
 
     /**
