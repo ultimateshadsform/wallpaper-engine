@@ -9,7 +9,10 @@ declare global {
       applyUserProperties?<T extends { value?: any }>(properties: {
         [key: string]: T;
       }): void;
-      applyGeneralProperties?(properties: { fps?: number }): void;
+      applyGeneralProperties?(properties: {
+        [key: string]: any;
+        fps?: number;
+      }): void;
     };
 
     /**
