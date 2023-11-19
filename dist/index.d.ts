@@ -14,8 +14,8 @@ declare global {
 
     /**
      * The directory property is useful if you want to allow users to mass import images or video files. This may be useful if you want to build a slideshow or another type of wallpaper that relies on a great number of image or video files.
-     * @param {string} propertyName
-     * @param {string} directoryPath
+     * @param {string} propertyName is the name of the property that triggered the event.
+     * @param {function} callback is the function that will be called when the user selects a directory.
      * @returns {void}
      */
     wallpaperRequestRandomFileForProperty?(
