@@ -27,3 +27,8 @@ In your `tsconfig.json` you need to add the line:
 For it to show and work.
 
 If anything is not working as expected, please [open an issue](https://github.com/ultimateshadsform/wallpaper-engine/issues/new/choose) on GitHub.
+
+## Links
+
+- [Wallpaper Engine](https://store.steampowered.com/app/431960/Wallpaper_Engine/)
+- [Wallpaper Engine Documentation](https://docs.wallpaperengine.io/en/web/overview.html)
