@@ -10,9 +10,9 @@ The TypeScript declarations in this package allow you to write type-safe code th
 
 This package is available on [npm](https://www.npmjs.com/package/wallpaper-engine-types). You can install it using your preferred package manager:
 
-`yarn add wallpaper-engine-types`
+`yarn add -D wallpaper-engine-types`
 
-`npm install wallpaper-engine-types`
+`npm install -D wallpaper-engine-types`
 
 In your `tsconfig.json` you need to add the line:
 
