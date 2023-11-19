@@ -38,7 +38,7 @@ declare global {
      * When files are removed.
      * @param propertyName is the name of the property that triggered the event.
      * @param removedFiles contains all removed file paths.
-     * @returns
+     * @returns {void}
      */
     userDirectoryFilesRemoved?: (
       propertyName: string,
