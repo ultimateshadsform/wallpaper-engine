@@ -21,7 +21,7 @@ declare global {
      * @param {function} callback is the function that will be called when the user selects a directory.
      * @returns {void}
      */
-    wallpaperRequestRandomFileForProperty?(
+    wallpaperRequestRandomFileForProperty(
       propertyName: string,
       callback: (propertyName: string, filePath: string) => void
     ): void;
@@ -32,7 +32,7 @@ declare global {
      * @param changedFiles contains all added (or modified) file paths.
      * @returns {void}
      */
-    userDirectoryFilesAddedOrChanged?: (
+    userDirectoryFilesAddedOrChanged: (
       propertyName: string,
       changedFiles: string[]
     ) => void;
@@ -43,7 +43,7 @@ declare global {
      * @param removedFiles contains all removed file paths.
      * @returns {void}
      */
-    userDirectoryFilesRemoved?: (
+    userDirectoryFilesRemoved: (
       propertyName: string,
       removedFiles: string[]
     ) => void;
@@ -52,15 +52,15 @@ declare global {
      * In order to get started with an audio visualizer, you have to register a listener function in JavaScript that will supply the audio volume levels to you. Wallpaper Engine provides the window.wallpaperRegisterAudioListener function for this purpose, it expects a callback function that you also need to create.
      * @param {string} propertyName
      */
-    wallpaperRegisterAudioListener?: (
-      callback: (audioArray: Uint8Array) => void
+    wallpaperRegisterAudioListener: (
+      callback: (audioArray: number[]) => void
     ) => void;
 
     /**
      * This event function will be called when the media integration is turned on or off by the user in the app settings. You can utilize this to adapt your wallpaper for users who choose not to use this feature at all.
      * @param callback is the function that will be called when the media integration is turned on or off.
      */
-    wallpaperRegisterMediaStatusListener?(
+    wallpaperRegisterMediaStatusListener(
       callback: WallpaperMediaStatusListener
     ): void;
 
@@ -68,7 +68,7 @@ declare global {
      * This event function will be called when the properties of the currently playing media change. It contains text information such as the song title, artist name, album name and more.
      * @param callback is the function that will be called when the media properties change.
      */
-    wallpaperRegisterMediaPropertiesListener?(
+    wallpaperRegisterMediaPropertiesListener(
       callback: WallpaperMediaPropertiesListener
     ): void;
 
@@ -76,7 +76,7 @@ declare global {
      * This event function will be called when the thumbnail of the currently playing media changes. It contains the thumbnail of the album art and additional information, such as primary, secondary and tertiary colors used in the album art which you can utilize in your wallpaper. The thumbnail string can be set as src parameter of an img element like this: document.getElementById('mediaThumbnail').src = event.thumbnail;
      * @param callback is the function that will be called when the media thumbnail changes.
      */
-    wallpaperRegisterMediaThumbnailListener?(
+    wallpaperRegisterMediaThumbnailListener(
       callback: WallpaperMediaThumbnailListener
     ): void;
 
@@ -84,7 +84,7 @@ declare global {
      * This event function will be called when the users starts, stops or pauses media playback. You can use the class constants to check for the appropriate state. For example: event.state == window.wallpaperMediaIntegration.playback.PLAYING.
      * @param callback is the function that will be called when the media playback state changes.
      */
-    wallpaperRegisterMediaPlaybackListener?(
+    wallpaperRegisterMediaPlaybackListener(
       callback: WallpaperMediaPlaybackListener
     ): void;
 
@@ -92,18 +92,18 @@ declare global {
      * This event function will be called when the current time of the playing media changes. Please note: Not all media players support this feature, make sure your wallpaper also works fine when this function is never called.
      * @param callback is the function that will be called when the media playback time changes.
      */
-    wallpaperRegisterMediaTimelineListener?(
+    wallpaperRegisterMediaTimelineListener(
       callback: WallpaperMediaTimelineListener
     ): void;
 
     /**
      * This function allows you to set the current playback position of the media player. Please note: Not all media players support this feature, make sure your wallpaper also works fine when this function is never called.
      */
-    wallpaperPluginListener?: {
+    wallpaperPluginListener: {
       onPluginLoaded(name: string, version: string): void;
     };
 
-    wpPlugins?: {
+    wpPlugins: {
       led: {
         setAllDevicesByImageData(
           encodedImageData: string,
