@@ -19,7 +19,11 @@
     "definitions",
     "typings"
   ],
+  "scripts": {
+    "test-types": "tsc --noEmit src/__tests__/index.test-d.ts"
+  },
   "devDependencies": {
-    "typescript": "^5.2.2"
+    "tsd": "^0.30.0",
+    "typescript": "^5.0.0"
   }
 }
