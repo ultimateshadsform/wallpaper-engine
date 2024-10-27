@@ -26,6 +26,8 @@ For it to show and work. ⚙️
 
 If anything is not working as expected, please [open an issue](https://github.com/ultimateshadsform/wallpaper-engine/issues/new/choose) on GitHub. 🐛
 
+Anyways. I'm currently working on an all-in-one solution for creating wallpaper engine wallpaper with CEF remote debugging with typescript support so you can build using vite in realtime without having to build every time and import in wallpaper engine.
+
 ## 🔗 Links
 
 - [Wallpaper Engine](https://store.steampowered.com/app/431960/Wallpaper_Engine/) 🎨
